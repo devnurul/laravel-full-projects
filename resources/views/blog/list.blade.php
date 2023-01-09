@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Blog List</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,10 +17,12 @@
         </style>
     </head>
     <body class="antialiased">
-       <h2>Hello Laravel I am Nurul Islam</h2>
+       <h2>
+        This is Blog List
+       </h2>
        <ul>
-        <li><a href="{{ url("") }}">About</a></li>
-        <li><a href="{{ url("blogList") }}">Blog</a></li>
+        <li><a href="">About</a></li>
+        <li><a target="_blank" href="{{ url("blogList") }}">Blog</a></li>
         <li><a href="">contact</a></li>
        </ul>
     </body>

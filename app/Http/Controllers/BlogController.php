@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class BlogController extends Controller
 {
     public function list(){
-        return "This is a blog list";
+        return view('blog.list');
     }
 }
