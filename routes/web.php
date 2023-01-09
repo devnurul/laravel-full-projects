@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user', [App\Http\Controllers\BlogController:class, 'show'];
+Route::get('/user', [App\Http\Controllers\BlogController:class, 'show']; 
+Route::get('/category', [App\Http\Controllers\BlogController:class, 'show'];
