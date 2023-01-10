@@ -21,7 +21,7 @@
        <ul>
         <li><a href="{{ url("") }}">About</a></li>
         <li><a href="{{ url("blogList") }}">Blog</a></li>
-        <li><a href="">contact</a></li>
+        <li><a href="">contact us</a></li>
        </ul>
     </body>
 </html>
