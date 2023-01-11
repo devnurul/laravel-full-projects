@@ -13,12 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('all_table', function(Blueprint $table){
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('class');
-            $table->string('roll');
-            $table->timestamps();
+        Schema::table("all_table", function( Blueprint $table){
+            $table->renameColumn('votes', 'userName');
+        });
+        Schema::table("students", function( Blueprint $table){
+            $table->dropColumn('city');
         });
     }
 
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+       
     }
 };
