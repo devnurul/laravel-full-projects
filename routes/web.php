@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/insert', function () {
     return view('basic_curd.insert');
 });
 Route::get('/delete', function () {
@@ -31,3 +31,9 @@ Route::post('/insetData',[App\Http\Controllers\BasicCurdController::class, 'onIn
 Route::post('/deleteData',[App\Http\Controllers\BasicCurdController::class, 'onDelete']);
 Route::post('/updateData',[App\Http\Controllers\BasicCurdController::class, 'onUpdate']);
 
+Route::get('/queryBuilder',[App\Http\Controllers\QueryBuilderController::class, 'selectAllRows']);
+
+
+Route::get('/agreegatesQuery',[App\Http\Controllers\AggreegatesController::class, 'avgValue']);
+
+Route::get('/selectQuery',[App\Http\Controllers\SelectQuery::class, 'multiColumn']);
