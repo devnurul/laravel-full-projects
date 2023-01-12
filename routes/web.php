@@ -14,9 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('basic_curd.insert');
+});
+Route::get('/delete', function () {
+    return view('basic_curd.delete');
+});
+Route::get('/update', function () {
+    return view('basic_curd.update');
 });
 
 
+
 Route::get('/blogList',[App\Http\Controllers\BlogController::class, 'list']);
+Route::get('/select',[App\Http\Controllers\BasicCurdController::class, 'onSelect']);
+Route::post('/insetData',[App\Http\Controllers\BasicCurdController::class, 'onInsert']);
+Route::post('/deleteData',[App\Http\Controllers\BasicCurdController::class, 'onDelete']);
+Route::post('/updateData',[App\Http\Controllers\BasicCurdController::class, 'onUpdate']);
 
