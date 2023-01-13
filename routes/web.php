@@ -37,3 +37,7 @@ Route::get('/queryBuilder',[App\Http\Controllers\QueryBuilderController::class, 
 Route::get('/agreegatesQuery',[App\Http\Controllers\AggreegatesController::class, 'avgValue']);
 
 Route::get('/selectQuery',[App\Http\Controllers\SelectQuery::class, 'multiColumn']);
+Route::get('/mergeQuery',[App\Http\Controllers\MargeController::class, 'dataMarge']);
+Route::get('/joinAllData',[App\Http\Controllers\MargeController::class, 'joinData']);
+Route::get('/insetData',[App\Http\Controllers\InsertController::class, 'insertData']);
+Route::get('/deleteData',[App\Http\Controllers\DeleteController::class, 'onDelete']);
