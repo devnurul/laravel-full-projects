@@ -41,3 +41,5 @@ Route::get('/mergeQuery',[App\Http\Controllers\MargeController::class, 'dataMarg
 Route::get('/joinAllData',[App\Http\Controllers\MargeController::class, 'joinData']);
 Route::get('/insetData',[App\Http\Controllers\InsertController::class, 'insertData']);
 Route::get('/deleteData',[App\Http\Controllers\DeleteController::class, 'onDelete']);
+
+//all route in one controller
