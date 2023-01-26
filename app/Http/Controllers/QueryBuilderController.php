@@ -12,3 +12,5 @@ class QueryBuilderController extends Controller
       return $result;
     }
 }
+
+//nice
